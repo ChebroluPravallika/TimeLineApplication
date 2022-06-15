@@ -1,0 +1,28 @@
+/* Write your CSS here */
+.duration {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.para {
+  margin: 5px;
+}
+
+.projectImage {
+  height: 100%;
+  width: 100%;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .titleContainer {
+    display: flex;
+    flex-direction: column;
+  }
+}

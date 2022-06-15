@@ -1,0 +1,39 @@
+/* Write your CSS here */
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.duration {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .duration {
+    font-size: 10px;
+  }
+}
+
+.itemsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: 808080;
+}
+
+.items {
+  color: #171f46;
+  padding: 10px;
+  border-width: 0px;
+  margin: 5px;
+}
