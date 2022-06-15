@@ -10,7 +10,10 @@ class TimelineView extends Component {
     return (
       <div className="chrono-container" style={{textAlign: 'center'}}>
         <h1 style={{color: '#2b237c'}}>MY TIMELINE APPLICATION</h1>
-        <Chrono mode="VERTICAL_ALTERNATING" items={timelineItemsList}>
+        <Chrono mode="VERTICAL_ALTERNATING" items={timelineItemsList}
+          theme={{
+            secondary: 'white',
+          }}>
           {timelineItemsList.map(eachItem =>
             eachItem.categoryId === 'COURSE' ? (
               <CourseTimelineCard eachItem={eachItem} />
